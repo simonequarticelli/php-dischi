@@ -11,15 +11,17 @@
   <body>
 
     <div class="card_container">
-      
+
     </div>
 
     <!--HANDLEBARS-->
     <script class="card_template" type ="text/x-handlebars-template">
-      <img src="{{ img }}" alt="">
-      <h4>{{ title }}</h4>
-      <h5>{{ artist }}</h5>
-      <h5>{{ year }}</h5>
+      <div class="card">
+        <img src="{{ img }}" alt="">
+        <h4>{{ title }}</h4>
+        <h5>{{ artist }}</h5>
+        <h5>{{ year }}</h5>
+      </div>
     </script>
 
   </body>

@@ -42,14 +42,5 @@ I dati da visualizzare per ogni disco sono:
       ?>
     </div>
 
-
-    <!--HANDLEBARS-->
-    <!-- <script class="card_template" type ="text/x-handlebars-template">
-      <img src="" alt="">
-      <h4>{{}}</h4>
-      <h5>{{}}</h5>
-      <h5>{{}}</h5>
-    </script> -->
-
   </body>
 </html>
