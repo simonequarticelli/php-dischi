@@ -10709,13 +10709,13 @@ $(document).ready(function () {
   //salvo il template dentro a una variabile
   var card__template = $('.card_template').html(); //richiamo il compile
 
-  var template__function = Handlebars.compile(card__template);
+  var template__function = Handlebars.compile(card__template); //richiedo dati al bd php
+
   $.ajax({
     'url': "http://localhost:80/esercizio_44_php-dischi/data.php",
     'metod': "GET",
     'success': function success(data) {
-      var obj_db = JSON.parse(data);
-      console.log(obj_db);
+      var obj_db = JSON.parse(data); //console.log(obj_db);
 
       for (var i = 0; i < obj_db.length; i++) {
         var album = {
@@ -10732,6 +10732,38 @@ $(document).ready(function () {
     'error': function error(richiesta, stato, errori) {
       alert(errori);
     }
+  }); //al click riordino array per anno
+
+  $('button').click(function () {
+    //pulisco il container
+    $('.card_container').empty();
+    $.ajax({
+      'url': "http://localhost:80/esercizio_44_php-dischi/data.php",
+      'metod': "GET",
+      'success': function success(data) {
+        var obj_db = JSON.parse(data); //console.log(obj_db);
+
+        obj_db.sort(function (a, b) {
+          return a.year.localeCompare(b.year); //<-- compara le stringhe
+        });
+        console.log(obj_db);
+
+        for (var i = 0; i < obj_db.length; i++) {
+          var album = {
+            'img': obj_db[i].img,
+            'title': obj_db[i].title,
+            'artist': obj_db[i].artist,
+            'year': obj_db[i].year
+          };
+          var html = template__function(album); //console.log(html);
+
+          $('.card_container').append(html);
+        }
+      },
+      'error': function error(richiesta, stato, errori) {
+        alert(errori);
+      }
+    });
   }); //RICERCA ALBUM
 
   $('#search').keyup(function () {

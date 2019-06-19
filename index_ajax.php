@@ -13,6 +13,7 @@
 
     <header>
       <input id="search" type="text" placeholder="Filtra per album, artista o anno" name="ricerca_artista" value="">
+      <button type="button" name="button">Riordina album per data di uscita</button>
     </header>
 
     <div class="card_container"></div>
