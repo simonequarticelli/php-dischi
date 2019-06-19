@@ -35,8 +35,6 @@ $(document).ready(function(){
       }
   });
 
-
-
   //RICERCA ALBUM
   $('#search').keyup(function(){
 
@@ -59,7 +57,5 @@ $(document).ready(function(){
 
     });
   });
-
-
 
 });
