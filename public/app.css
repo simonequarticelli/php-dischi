@@ -53,7 +53,7 @@ header button {
   padding: 0px 10px;
   border: 1px solid grey;
   border-radius: 5px;
-  transition: 1s;
+  transition: 0.5s;
 }
 
 header button:hover {
