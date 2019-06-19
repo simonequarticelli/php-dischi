@@ -27,6 +27,7 @@ header {
           align-items: center;
   -webkit-justify-content: center;
           justify-content: center;
+  margin-top: 10px;
 }
 
 header input {
