@@ -19,8 +19,29 @@ h6 {
   padding: 3px 0px;
 }
 
+header {
+  width: 100%;
+  display: -webkit-flex;
+  display: flex;
+  -webkit-align-items: center;
+          align-items: center;
+  -webkit-justify-content: center;
+          justify-content: center;
+}
+
+header input {
+  margin: 10px;
+  height: 30px;
+  width: 250px;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  border: 0;
+  padding: 0px 10px;
+  border: 1px solid grey;
+  border-radius: 5px;
+}
+
 .card {
-  padding: 20px;
+  padding: 10px;
   margin: 5px;
   text-align: center;
   -webkit-align-items: center;
@@ -28,11 +49,11 @@ h6 {
   min-width: calc(100% / 6);
   border-radius: 5px;
   border: 1px solid grey;
-  min-height: 300px;
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
 }
 
 .card img {
+  border-radius: 5px;
   width: 200px;
   height: 200px;
 }

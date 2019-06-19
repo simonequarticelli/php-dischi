@@ -29,17 +29,14 @@ I dati da visualizzare per ogni disco sono:
   <body>
 
     <div class="card_container">
-      <?php
-        foreach ($db_dischi as $value) {
-          echo
-            '<div class="card">
-              <img src="'.$value['img'].'" alt="">
-              <h3>'.$value['title'].'</h3>
-              <h6>'.$value['artist'].'</h6>
-              <h6>'.$value['year'].'</h6>
-            </div>';
-        }
-      ?>
+        <?php foreach ($db_dischi as $value) { ?>
+          <div class="card">
+            <img src="<?php echo $value['img']?>" alt="">
+            <h3><?php echo $value['title']?></h3>
+            <h6><?php echo $value['artist']?></h6>
+            <h6><?php echo $value['year']?></h6>
+          </div>
+      <?php } ?>
     </div>
 
   </body>

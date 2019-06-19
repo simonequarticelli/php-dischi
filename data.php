@@ -62,8 +62,9 @@ $db_dischi = [
     'year' => '2000'
   ],
 ];
+
 // echo '<pre>';
-// var_dump($db_dischi);
+// var_dump($prova);
 // echo '</pre>';
 
 // converte array in json
