@@ -71,6 +71,7 @@ $(document).ready(function(){
         });
   });
 
+  //faccio funzionare select
   $('.cerca_artista').change(function(){
 
     var artista_selezionato = $(this).val();
@@ -166,4 +167,5 @@ $(document).ready(function(){
         }
     });
   });
+
 });
