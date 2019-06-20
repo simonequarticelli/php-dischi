@@ -7,7 +7,7 @@ Utilizzare: Html, Sass, JS, jQuery, handlebars, Php
 
 *Opzionale*:
 A - Attraverso un’altra chiamata ajax, filtrare gli album per artista
-B - Attraverso un’altra chiamata ajax, ordinare gli album per data di uscita. (edited)
+B - Attraverso un’altra chiamata ajax, ordinare gli album per data di uscita. 
 I dati da visualizzare per ogni disco sono:
 - immagine di copertina
 - titolo album

@@ -63,22 +63,8 @@ $db_dischi = [
   ],
 ];
 
-//ORDINO PER DATA ARRAY
-// // funzione per controllo date
-// function date_compare($element1, $element2) {
-//     $datetime1 = strtotime($element1['year']); //<-- strtotime = new Date () in js
-//     $datetime2 = strtotime($element2['year']);
-//     return $datetime1 - $datetime2;
-// }
-//
-// // ordino array
-// usort($db_dischi, 'date_compare');
-
 // echo '<pre>';
 // var_dump($db_dischi);
 // echo '</pre>';
-
-//converte array in json
-echo json_encode($db_dischi);
 
 ?>
